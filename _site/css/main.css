@@ -55,6 +55,11 @@
     filter: blur(5px);*/
 }
 
+.background--video video {
+    min-width: 100%;
+    min-height: 100%;
+}
+
 #email {
     height:200px;
     width:246px;
