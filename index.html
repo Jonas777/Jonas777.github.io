@@ -12,27 +12,41 @@
         <link rel="apple-touch-icon" href="apple-touch-icon.png">
 
         <link rel="stylesheet" href="css/bootstrap.min.css">
-        <style>
-            html, body {
-                height: 100%;
-                margin: 0;
-            }
-        </style>
-        <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+        
+        <!-- <link rel="stylesheet" href="css/bootstrap-theme.min.css"> -->
         <link rel="stylesheet" href="css/main.css">
+
+        <link rel="stylesheet" href="css/carousel.css">
+
         <link href="https://fonts.googleapis.com/css?family=Roboto|Libre+Barcode+128+Text" rel="stylesheet">
 
         <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
     </head>
 
     <body>
+
+        <div>
         <div class="background--video">
-            <video playsinline loop autoplay muted poster="/img/waterfall_blur.jpg">
+            <video playsinline loop autoplay muted poster="/img/waterfall_blur.jpg" id="bgvid">
                 <source src="/img/waterfall_blur.mp4" type="video/mp4">
             </video>
+
+            <div class="bartitle" id="bartitle1">
+                <h1 class="main-title">jonas mcgowan martin</h1>
+            </div>
+
+            <a href="mailto:jonasmmartin@gmail.com">
+                <video playsinline loop autoplay muted id="email">
+                    <source src="/img/email.mp4" type="video/mp4">
+                </video>
+            </a>
+
+            <a href="https://github.com/Jonas777">
+                <img src="/img/git.png" id="git">
+            </a>
         </div>
 
-        <div class="bartitle" id="bartitle1">
+        <!-- <div class="bartitle" id="bartitle1">
             <h1 class="main-title">jonas mcgowan martin</h1>
         </div>
 
@@ -40,6 +54,7 @@
             <video playsinline loop autoplay muted id="email">
                 <source src="/img/email.mp4" type="video/mp4">
             </video>
-        </a>
+        </a> -->
+        </div>
     </body>
 </html>
