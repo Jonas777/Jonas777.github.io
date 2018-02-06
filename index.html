@@ -16,25 +16,36 @@
         <!-- <link rel="stylesheet" href="css/bootstrap-theme.min.css"> -->
         <link rel="stylesheet" href="css/main.css">
 
-        <link rel="stylesheet" href="css/carousel.css">
+        <!-- <link rel="stylesheet" href="css/carousel.css"> -->
 
         <link href="https://fonts.googleapis.com/css?family=Roboto|Libre+Barcode+128+Text" rel="stylesheet">
 
         <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+        <script src="js/age.js"></script>
+        <script src="js/randomBG.js"></script>
+        <script type="text/javascript">
+            function start(){
+                calcAge();
+                randombg();
+            }
+        </script>
     </head>
 
-    <body>
+    <body onload="start()">
 
-        <video autoplay loop muted poster="/img/waterfall_blur.jpg" id="background">
+        <!-- <video autoplay loop muted poster="/img/waterfall_blur.jpg" id="background">
             <source src="/img/waterfall_blur.mp4" type="video/mp4">
-        </video>
+        </video> -->
+        <div id="random">
+            <img src="/img/bgs/city.jpg" id="background">
+        </div>
 
         <div class="container-fluid h-100">
             <div class="row h-100">
                 <div class="col">
 
                     <div class="bartitle" id="bartitle1">
-                        <h1 class="main-title">jonas mcgowan martin</h1>
+                        <h1 class="main-title" id="bartitle">jonas mcgowan martin</h1>
                     </div>
 
                     <a href="mailto:jonasmmartin@gmail.com">
@@ -46,18 +57,27 @@
                     <a href="https://github.com/Jonas777">
                         <img src="/img/git.png" id="git">
                     </a>
+                    <div class="downarrow bounce">
+                        <img src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/PjwhRE9DVFlQRSBzdmcgIFBVQkxJQyAnLS8vVzNDLy9EVEQgU1ZHIDEuMS8vRU4nICAnaHR0cDovL3d3dy53My5vcmcvR3JhcGhpY3MvU1ZHLzEuMS9EVEQvc3ZnMTEuZHRkJz48c3ZnIGVuYWJsZS1iYWNrZ3JvdW5kPSJuZXcgMCAwIDMyIDMyIiBoZWlnaHQ9IjMycHgiIGlkPSLQodC70L7QuV8xIiB2ZXJzaW9uPSIxLjEiIHZpZXdCb3g9IjAgMCAzMiAzMiIgd2lkdGg9IjMycHgiIHhtbDpzcGFjZT0icHJlc2VydmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiPjxwYXRoIGQ9Ik0yNC4yODUsMTEuMjg0TDE2LDE5LjU3MWwtOC4yODUtOC4yODhjLTAuMzk1LTAuMzk1LTEuMDM0LTAuMzk1LTEuNDI5LDAgIGMtMC4zOTQsMC4zOTUtMC4zOTQsMS4wMzUsMCwxLjQzbDguOTk5LDkuMDAybDAsMGwwLDBjMC4zOTQsMC4zOTUsMS4wMzQsMC4zOTUsMS40MjgsMGw4Ljk5OS05LjAwMiAgYzAuMzk0LTAuMzk1LDAuMzk0LTEuMDM2LDAtMS40MzFDMjUuMzE5LDEwLjg4OSwyNC42NzksMTAuODg5LDI0LjI4NSwxMS4yODR6IiBmaWxsPSIjMTIxMzEzIiBpZD0iRXhwYW5kX01vcmUiLz48Zy8+PGcvPjxnLz48Zy8+PGcvPjxnLz48L3N2Zz4=" width="100%" height="100%">
+                    </div>
                 </div>
             </div>
 
-        <!-- <div class="bartitle" id="bartitle1">
-            <h1 class="main-title">jonas mcgowan martin</h1>
-        </div>
+            <div class="row">
+                <div style="background-color:black; padding: 0;" class="col-xl-auto">
+                    <div class="hovercontainer">
+                        <img src="/img/headshot.jpg" class="hoverimage" style="border-radius: 50%" width="487" height="487">
+                        <div class="middle">
+                            <div class="bigtext" style="color:white;">hey.</div>
+                        </div>
+                    </div>
+                </div>
+                <div style="background-color:#cccccc; display:flex; justify-content:center; flex-direction:column;" class="col-xl">
+                    <p style="font-size: 50px;">Congratulations on finding my website.</p>
+                    <p>I am a <span id="agecontainer">age</span> year old programmer from Woodbury, Connecticut. I graduated from Worcester Polytechnic Institute in 2017 with a degree in Computer Science and Interactive Media and Game Development. I am currently seeking employment in the greater Boston area.</p>
+                </div>
+            </div>
 
-        <a href="mailto:jonasmmartin@gmail.com">
-            <video playsinline loop autoplay muted id="email">
-                <source src="/img/email.mp4" type="video/mp4">
-            </video>
-        </a> -->
         </div>
     </body>
 </html>
