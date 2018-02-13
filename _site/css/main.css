@@ -173,6 +173,12 @@ p {
     margin: 0 auto;
 }
 
+.vcentertext {
+    display:flex;
+    justify-content:center;
+    flex-direction:column;
+}
+
 .bounce {
     -moz-animation: bounce 3s infinite;
     -webkit-animation: bounce 3s infinite;
